@@ -28,32 +28,57 @@ body {
   height: 100vh;
 }
 
-.header {
-  grid-area: header;
-  background-color: var(--white);
-}
-
 .sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 56px;
   grid-area: sidebar;
   background-color: var(--primary-colour);
-  padding: 22px;
+  padding: 26px;
+  align-content: flex-start;
 }
 
 .sidebar-heading-and-icon {
-  display: flex;
-  column-gap: 14px;
+  display: grid;
+  grid-template-columns: 80px 3fr;
+  grid-template-rows: 1fr;
+  gap: 16px;
   align-items: center;
 }
 
 #dashboard-sidebar-icon {
-  height: 72px;
+  height: 64px;
   width: auto;
+  justify-self: center;
 }
 
 h1#sidebar-heading {
   font-weight: 600;
   color: var(--white);
   font-size: 34px;
+}
+
+img.sidebar-menu-icons {
+  height: 32px;
+  justify-self: center;
+}
+
+ul.sidebar-menus {
+  display: grid;
+  grid-template-columns: 80px 4fr;
+  column-gap: 16px;
+  row-gap: 22px;
+}
+
+ul.sidebar-menus li {
+  list-style-type: none;
+  color: var(--white);
+  font-size: 22px;
+}
+
+.header {
+  grid-area: header;
+  background-color: var(--white);
 }
 
 .main-content {
