@@ -28,13 +28,18 @@ body {
   height: 100vh;
 }
 
+.sidebar,
+.header,
+.main-content {
+  padding: 26px;
+}
+
 .sidebar {
   display: grid;
   grid-template-columns: 1fr;
   gap: 56px;
   grid-area: sidebar;
   background-color: var(--primary-colour);
-  padding: 26px;
   align-content: flex-start;
 }
 
@@ -55,7 +60,7 @@ body {
 h1#sidebar-heading {
   font-weight: 600;
   color: var(--white);
-  font-size: 34px;
+  font-size: 2rem;
 }
 
 img.sidebar-menu-icons {
@@ -73,12 +78,91 @@ ul.sidebar-menus {
 ul.sidebar-menus li {
   list-style-type: none;
   color: var(--white);
-  font-size: 22px;
+  font-size: 1.4rem;
+  transition: all 200ms ease-in-out;
+}
+
+ul.sidebar-menus li:hover {
+  color: var(--heading-text-colour);
 }
 
 .header {
+  display: grid;
   grid-area: header;
   background-color: var(--white);
+}
+
+.header-icons {
+  height: 28px;
+}
+
+.header-top-row {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  height: min-content;
+}
+
+.dashboard-search-container {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  height: min-content;
+}
+
+.dashboard-search-container input[type="search"] {
+  height: 52px;
+  padding: 12px;
+  outline: 2px solid var(--secondary-colour);
+  border: none;
+  background-color: var(--secondary-colour);
+  border-radius: 28px;
+  width: max(320px, 100%);
+  font-size: 1.2rem;
+  color: var(--heading-text-colour);
+}
+
+.dashboard-search-container input:focus {
+  outline: 2px solid var(--primary-colour);
+}
+
+.profile-info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr minmax(220px, 2fr);
+  grid-template-rows: 1fr;
+  gap: px;
+  height: min-content;
+  justify-items: flex-end;
+  align-items: center;
+}
+
+.profile-image-small-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image-small {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#header-profile-pic-small {
+  display: grid;
+  justify-self: center;
+}
+
+#header-username-small {
+  display: grid;
+  justify-self: flex-start;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 .main-content {

@@ -14,7 +14,41 @@
   </head>
   <body>
     <div class="container">
-      <div class="header"></div>
+      <div class="header">
+        <div class="header-top-row">
+          <div class="dashboard-search-container">
+            <label for="dashboard-search"
+              ><img
+                src="icons/search.svg"
+                alt="search-icon"
+                class="header-icons"
+            /></label>
+            <input
+              type="search"
+              name="dashboard-search"
+              id="dashboard-search"
+            />
+          </div>
+          <div class="profile-info-container">
+            <img
+              src="icons/notifications.svg"
+              alt="notifications-icon"
+              class="header-icons"
+            />
+            <div
+              class="profile-image-small-wrapper"
+              id="header-profile-pic-small"
+            >
+              <img
+                src="images/profile-img.jpg"
+                alt="profile-image"
+                class="profile-image-small"
+              />
+            </div>
+            <h3 id="header-username-small">Cassandra Bailey</h3>
+          </div>
+        </div>
+      </div>
       <div class="sidebar">
         <div class="sidebar-heading-and-icon">
           <img
