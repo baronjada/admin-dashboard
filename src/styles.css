@@ -169,11 +169,6 @@ ul.sidebar-menus li:hover {
   object-fit: cover;
 }
 
-#header-profile-pic-small {
-  display: grid;
-  justify-self: center;
-}
-
 h3#header-username-small {
   display: grid;
   justify-self: flex-end;
@@ -182,7 +177,8 @@ h3#header-username-small {
 }
 
 .header-buttons {
-  font-size: 1.2em;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
   color: var(--white);
   background-color: var(--primary-colour);
   border: 2px solid var(--primary-colour);
@@ -271,6 +267,10 @@ p#welcome-message-intro {
   transform: translateY(-8px);
 }
 
+.project-card h4 {
+  color: var(--heading-text-colour);
+}
+
 .project-card p {
   font-size: 1em;
   flex-grow: 2;
@@ -284,6 +284,68 @@ p#welcome-message-intro {
 }
 
 .announcements-trending-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 34px;
+}
+
+.announcements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.announcements-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.announcements-card {
+  background-color: var(--white);
+  flex-grow: 2;
+  padding: 34px;
+  border-radius: 14px;
+  gap: 4px;
+  box-shadow: rgba(206, 206, 206, 0.2) 0px 2px 8px 0px;
+}
+
+.divider::after {
+  content: "";
+  display: block;
+  border-top: 1px solid rgba(206, 206, 206, 0.8);
+}
+
+.announcements-card h4 {
+  color: var(--heading-text-colour);
+  font-size: 1.1em;
+}
+
+.announcements-card p {
+  color: var(--body-text-colour);
+  font-size: 0.9em;
+}
+
+.announcement {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.trending-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: var(--white);
+  padding: 34px;
+  border-radius: 14px;
+  gap: 4px;
+  box-shadow: rgba(206, 206, 206, 0.2) 0px 2px 8px 0px;
+}
+
+.trending-container {
   display: flex;
   flex-direction: column;
   gap: 14px;
