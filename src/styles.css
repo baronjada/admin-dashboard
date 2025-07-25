@@ -112,8 +112,12 @@ ul.sidebar-menus li:hover {
   height: min-content;
 }
 
+#search-bar-icon {
+  margin-top: 6px;
+}
+
 .dashboard-search-container input[type="search"] {
-  height: 52px;
+  height: 34px;
   padding: 12px;
   outline: 2px solid var(--secondary-colour);
   border: none;
