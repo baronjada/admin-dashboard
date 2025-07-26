@@ -322,7 +322,7 @@ p#welcome-message-intro {
 
 .announcements-card {
   background-color: var(--white);
-  padding: 34px;
+  padding: 28px;
   border-radius: 14px;
   gap: 4px;
   box-shadow: rgba(206, 206, 206, 0.2) 0px 2px 8px 0px;
@@ -361,7 +361,7 @@ p#welcome-message-intro {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   background-color: var(--white);
-  padding: 34px;
+  padding: 28px;
   border-radius: 14px;
   gap: 22px;
   box-shadow: rgba(206, 206, 206, 0.2) 0px 2px 8px 0px;
@@ -408,5 +408,10 @@ h6.trending-projects {
 
   .project-card {
     height: 220px;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 34px;
   }
 }
