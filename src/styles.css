@@ -263,7 +263,7 @@ p#welcome-message-intro {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  height: 260px;
+  height: 280px;
   padding: 28px 20px;
   border-radius: 14px;
   border-left: 8px solid var(--accent-colour);
@@ -302,9 +302,8 @@ p#welcome-message-intro {
 }
 
 .announcements-trending-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 34px;
 }
 
@@ -318,12 +317,11 @@ p#welcome-message-intro {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  gap: 16px;
 }
 
 .announcements-card {
   background-color: var(--white);
-  flex-grow: 2;
   padding: 34px;
   border-radius: 14px;
   gap: 4px;
@@ -398,4 +396,17 @@ h6.trending-projects {
   font-size: 0.9em;
   font-weight: 500;
   color: var(--body-text-colour);
+}
+
+@media (max-width: 1600px) {
+  .project-cards-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 16px;
+  }
+
+  .project-card {
+    height: 220px;
+  }
 }
