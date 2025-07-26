@@ -113,7 +113,6 @@ ul.sidebar-menus li:hover {
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 1fr;
   align-items: center;
-  height: min-content;
 }
 
 .dashboard-search-container {
@@ -145,9 +144,13 @@ ul.sidebar-menus li:hover {
 
 .profile-info-container {
   display: flex;
+  justify-content: flex-end;
+}
+
+.profile-info-content {
+  display: flex;
   align-items: center;
   gap: 24px;
-  margin-left: auto;
 }
 
 .profile-image-small-wrapper {
@@ -399,6 +402,18 @@ h6.trending-projects {
 }
 
 @media (max-width: 1600px) {
+  .header-top-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .profile-info-container {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: flex-start;
+  }
+
   .project-cards-container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -413,5 +428,10 @@ h6.trending-projects {
   .main-content {
     grid-template-columns: 1fr;
     gap: 34px;
+  }
+
+  .trending-card {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
