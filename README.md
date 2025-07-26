@@ -23,3 +23,5 @@ I also found a Stack Overflow article which helped solidify my understanding of 
 ## What I Could Do Better:
 
 I didn't necessarily focus on making this project responsive therefore I am aware the cards may spill slightly on smaller breakpoints. However this is something I am learning more about in the near future so would be a great opportunity to re-visit this project and add some finishing touches in terms of responsive design.
+
+Update 26/07/25: Shortly after the above reflection, I re-visited some of my prior learning on grid and used grid-row-start and grid-row-end properties along with tweaking grid-template-column and grid-template-row to adjust the positioning of the header and main content elements.
